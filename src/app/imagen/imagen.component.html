@@ -1,0 +1,19 @@
+<p>imagen works!</p>
+<button appPractica3 (click) ="cambiarEstado()">cambiar</button>
+
+<div *ngIf="bandera"><img src ="assets/imagen/minion.jpg"></div>
+
+<h4 appPractica3>PRACTICA VIII</h4>
+
+<ul appPractica3 *ngFor="let person of people"
+[ngSwitch]="person.country">
+
+<li *ngSwitchCase="'Bo'"
+    style="color:rgb(33, 53, 33)">{{person.name}}({{person.country}})
+</li>
+
+<li *ngSwitchCase="'USA'"
+    style="color: rgb(21, 35, 41) ">{{person.name}}({{person.country}})
+</li>
+
+</ul>
